@@ -1,0 +1,54 @@
+ls  ==> lists files and directories in a specified directory
+ls -a or la ==> lists files and directories in a specified directory and  hidden file show
+
+cd ==> change directorie 
+	cd <file-name> or <file-path>
+
+pwd ==> current path show 
+
+cp ==> copy
+	cp <filename or directorie> <location-path>
+	cp <filename1> <filename2>
+
+mv ==> move 
+	mv <filename or directorie> <location-path>
+	mv <filename> <filename>
+
+cat ==> (concatenate) command in Linux displays file contents
+
+rm ==> remove file and directories
+	rm <file-name>
+	rm -rf <floder-name>
+
+echo ==> bash printing statement 
+	echo "Hello world!"
+
+man ==> displays the user manual for a command, system call, library function, or configuration file
+	man ls
+
+
+File and directory permissions
+
+chmod ==> "change mode", allows you to control who can read, edit, or run files and directories
+	chmod <current-user><group-user><other-user> <filename>
+	eg:
+		r 	==> read   	==> 4
+		w	==> writte	==> 2
+		x	==> excute	==> 1
+
+		chmod ugo+w <filename>
+		
+		chmod 600 <file-name>  			==> file current user (rw) permissions only difined 
+		chmod 777 <file-name> 			==> all permissions difined in the file 
+
+	chacking command:
+
+		ls -l
+
+chown ==> change ownership 
+	suod chown root:root <filename>
+	
+	chacking :
+
+		ls -l 
+
